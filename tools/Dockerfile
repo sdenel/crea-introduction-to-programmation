@@ -1,5 +1,6 @@
 # docker build . -t jupyter && docker run -i -t -p 8888:8888 -v $PWD/../:/opt/workingdir jupyter
 FROM continuumio/anaconda3
+RUN conda install -c anaconda graphviz
 EXPOSE 8888
 
 ENV data_dir /opt/data
