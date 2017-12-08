@@ -18,11 +18,11 @@
 
 ## Tips
 * Location coordonates are provided in the CH1903+ / LV95 system. You can transform them to WGS 84 by taking two points for which you know coordinates in both systems and by taking the approximation that the transformation is linear. For example, given two points in Geneva:
-https://map.geo.admin.ch/?lang=fr&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege&layers_visibility=false,false,false,false&layers_timestamp=18641231,,,&E=2501012.71&N=1118072.85&zoom=11.843333333333332
+ https://map.geo.admin.ch/?lang=fr&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege&layers_visibility=false,false,false,false&layers_timestamp=18641231,,,&E=2501012.71&N=1118072.85&zoom=11.843333333333332
 https://map.geo.admin.ch/?lang=fr&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege&layers_visibility=false,false,false,false&layers_timestamp=18641231,,,&E=2497281.51&N=1121171.99&zoom=9.709999999999994
 We can create columns:
-  * longitude = 6.15588 + ([N]-1121183)/(1118136.1-1121183) * (6.10761-6.15588)
-  * latitude = 46.20738 + ([E]-2497325.5)/(2500999.9-2497325.5) * (46.23423-46.20738)
+  * lon = 6.09203 + ([E]-2496000)/(2501000-2496000)*(6.15485-6.09203)
+  * lat = 46.16941 +([N]-1114000)/(1123000-1114000)*(46.25111-46.16941)
 * You can create new fields. For example, you can compute the number of physical injuries in a new column, naming it "Nb Physical Injuries":
  [Nb Blesses Legers]+[Nb Blesses Graves]+[Nb Tues]
 
